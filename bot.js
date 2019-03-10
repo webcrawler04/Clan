@@ -8,12 +8,8 @@ client.on('ready', () => {
 client.on('message', message => {
     if (message.content === 'Holo sight on ak') {
     	message.reply('EWW');
-  	}
-});
-
-});
-
-client.on('message', message => {
+        
+        client.on('message', message => {
     if (message.content === 'ur mom gay') {
     	message.reply('no u');
   	}
