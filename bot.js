@@ -36,8 +36,8 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === 'lr300') {
-    	message.reply('*** insert bann here ***');
+    if (message.content === 'lr300 is better than ak') {
+    	message.reply('*** insert ban here ***');
   	}
 });
 
