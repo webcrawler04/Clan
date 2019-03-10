@@ -21,5 +21,36 @@ client.on('message', message => {
   	}
 });
 
+client.on('ready', () => {
+    console.log('I am ready!');
+});
+
+client.on('message', message => {
+    if (message.content === 'ur gay') {
+    	message.reply('no sporky is');
+  	}
+});
+
+client.on('ready', () => {
+    console.log('I am ready!');
+});
+
+client.on('message', message => {
+    if (message.content === 'lr300') {
+    	message.reply('*** insert bann here ***');
+  	}
+});
+
+client.on('ready', () => {
+    console.log('I am ready!');
+});
+
+client.on('message', message => {
+    if (message.content === 'Dont do it') {
+    	message.reply('Why tho');
+  	}
+});
+
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
