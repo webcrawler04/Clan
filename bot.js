@@ -1,9 +1,8 @@
-var Discord = require("discord.js");
-var prefix = "t!";
-var client = new Discord.Client();
+const Discord = require('discord.js');
+const client = new Discord.Client();
 
-client.on("ready", () => {
-  console.log("ready to rumble!");
+client.on('ready', () => {
+    console.log('I am ready!');
 });
 
 var bannedwords = "fuck,shit,slut,whore".split(",");
@@ -79,6 +78,5 @@ client.on("message", msg => {
   }
 });
 
-THIS  MUST  BE  THIS  WAY
+// THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
-
