@@ -1,17 +1,3 @@
-const Discord = require('discord.js');
-const client = new Discord.Client();
-
-client.on('ready', () => {
-    console.log('I am ready!');
-});
-
-client.on('message', message => {
-    if (message.content === 'ping') {
-    	message.reply('pong');
-  	}
-});
-
-
 var Discord = require("discord.js");
 var prefix = "t!";
 var client = new Discord.Client();
@@ -93,8 +79,4 @@ client.on("message", msg => {
   }
 });
 
-client.login(Your token here!);
-
-
-// THIS  MUST  BE  THIS  WAY
-client.login(process.env.BOT_TOKEN);
+client.login(NTU0MjkxMzk2MzkyMjU1NDg5.D2a4fw.iRo5m4SJZOeyzq8cy1JGYmVUk_w);
