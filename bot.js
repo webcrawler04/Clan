@@ -6,7 +6,7 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === 'Holo sight on ak.') {
+    if (message.content === 'Holo sight on ak') {
     	message.reply('EWW');
   	}
 });
