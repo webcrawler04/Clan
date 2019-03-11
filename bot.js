@@ -11,21 +11,40 @@ client.on('message', message => {
   	}
 });
 
+});
+
+client.on('message', message => {
+    if (message.content === '@[TPD] Clan Bot#5633') {
+    	message.reply('Hello! ;-)');
+  	}
+});
 
 });
 
-var bannedwords = "fuck,shit,slut,whore,nigger,nibba".split(",");
+client.on('message', message => {
+    if (message.content === 'ur mom gay') {
+    	message.reply('no u');
+  	}
+});
 
-client.on("message", msg => {
-  if (msg.guild === null) return;
+});
 
-  for (i=0;i<bannedwords.length;i++) {
-    if (msg.content.toLowerCase().includes(bannedwords[i])) {
-      msg.delete();
-      msg.reply("Please don't swear!");
-      return;
-    }
- });
+client.on('message', message => {
+    if (message.content === '@sporky#3385') {
+    	message.reply('Dont @ him! >;(');
+  	}
+});
+
+
+});
+
+client.on('message', message => {
+    if (message.content === '@webcrawler#5282') {
+    	message.reply('Dont @ him! >;(');
+  	}
+});
+
+
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
