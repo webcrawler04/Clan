@@ -14,8 +14,7 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-    if (message.content === '@[TPD] Clan Bot
-#5633') {
+    if (message.content === '@soggie salad') {
     	message.reply('Hello! ;-) ');
   	}
 });
@@ -23,7 +22,7 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-    if (message.content === '@sporky#3385') {
+    if (message.content === '@[TPD] sporky') {
     	message.reply('Dont @ him >;(');
   	}
 });
@@ -32,7 +31,7 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-    if (message.content === '@webcrawler#5282') {
+    if (message.content === '@[TPD] web the bot.') {
     	message.reply('Dont @ him >;(');
   	}
 });
