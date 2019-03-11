@@ -11,5 +11,21 @@ client.on('message', message => {
   	}
 });
 
+
+});
+
+var bannedwords = "fuck,shit,slut,whore,nigger,nibba".split(",");
+
+client.on("message", msg => {
+  if (msg.guild === null) return;
+
+  for (i=0;i<bannedwords.length;i++) {
+    if (msg.content.toLowerCase().includes(bannedwords[i])) {
+      msg.delete();
+      msg.reply("Please don't swear!");
+      return;
+    }
+ });
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
