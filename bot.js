@@ -11,39 +11,5 @@ client.on('message', message => {
   	}
 });
 
-});
-
-client.on('message', message => {
-    if (message.content === '@soggie salad') {
-    	message.reply('Hello! ;-) ');
-  	}
-});
-
-});
-
-client.on('message', message => {
-    if (message.content === '@[TPD] sporky') {
-    	message.reply('Dont @ him >;(');
-  	}
-});
-
-
-});
-
-client.on('message', message => {
-    if (message.content === '@[TPD] web the bot.') {
-    	message.reply('Dont @ him >;(');
-  	}
-});
-
-
-});
-
-client.on('message', message => {
-    if (message.content === 'Holo sight on ak') {
-    	message.reply('***This man is retarded...***');
-  	}
-});
-
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
