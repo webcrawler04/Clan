@@ -11,15 +11,5 @@ client.on('message', message => {
   	}
 });
 
-});
-
-client.on('message', message => {
-    if (message.content === 'ur mom gay') {
-    	message.reply('no u');
-  	}
-});
-
-
-
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
