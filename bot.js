@@ -11,5 +11,17 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', message => {
+    if (message.content === 'ur bad') {
+    	message.reply('no u');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '@here') {
+    	message.reply('@everyone');
+  	}
+});
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
