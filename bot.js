@@ -18,8 +18,14 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-    if (message.content === '@here') {
-    	message.reply('@everyone');
+    if (message.content === '@everyone') {
+    	message.reply('dont @ me');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === 'meme me') {
+    	message.reply('***meme urslef nigger***');
   	}
 });
 
